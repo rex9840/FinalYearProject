@@ -1,0 +1,21 @@
+# project title 
+
+
+LMS : learning management system
+
+
+
+langauge used : python  , js , html , css , postgesql
+
+
+
+
+FRAME WORK: 	Django , React , pandas 
+
+
+
+
+Package manager : Poetry  
+
+
+
