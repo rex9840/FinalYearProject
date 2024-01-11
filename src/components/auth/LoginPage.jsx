@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 function LoginPage() {
@@ -87,7 +86,7 @@ function LoginPage() {
                     to="/signup"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                   >
-                 Sign up
+                    Sign up
                   </Link>
                 </p>
               </form>
