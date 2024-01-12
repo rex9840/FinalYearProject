@@ -4,7 +4,6 @@ import {
   MessageCircle,
   UserIcon,
   BookCheck,
-  Settings,
   NotebookPen,
   School,
   GraduationCap,
@@ -23,8 +22,9 @@ function Sidebar() {
     { name: "Student ", link: "/sidebar", icon: UserIcon },
     { name: "Teacher", link: "/sidebar", icon: GraduationCap },
     { name: "Attendance", link: "/sidebar", icon: BookCheck },
+    { name: "Class Routine", link: "/sidebar", icon: BookCheck },
     { name: "Exam", link: "/sidebar", icon: NotebookPen },
-    { name: "Setting", link: "/sidebar", icon: Settings },
+    { name: "Calender", link: "/sidebar", icon: BookCheck },
   ];
 
   const [open, setOpen] = useState(true);
@@ -33,7 +33,7 @@ function Sidebar() {
     <section className="flex gap-6 ">
       <div
         className={`bg-[#0e0e0e] min-h-screen ${
-          open ? "w-72" : "w-16"
+          open ? "w-60" : "w-16"
         } duration-500 text-gray-100 px-4`}
       >
         <div className="py-3 flex justify-end">
