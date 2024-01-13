@@ -4,7 +4,7 @@ import SignupPage from "../auth/SignupPage";
 import App from "../../App";
 // import Sidebar from "../home/Sidebar";
 // import Navbar from "../home/Navbar";
-import Dashboard from "../home/Dashboard";
+import Dashboard from "../dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
