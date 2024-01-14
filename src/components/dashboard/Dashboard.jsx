@@ -21,7 +21,7 @@ function Dashboard() {
       icon: <BookType />,
     },
     {
-      name: "Course",
+      name: "Available Courses",
       value: "10+",
       icon: <School />,
     },

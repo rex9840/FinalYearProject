@@ -5,6 +5,7 @@ import App from "../../App";
 // import Sidebar from "../home/Sidebar";
 // import Navbar from "../home/Navbar";
 import Dashboard from "../dashboard/Dashboard";
+import Events from "../events/Events";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
     ],
   },

@@ -8,6 +8,7 @@ import {
   School,
   GraduationCap,
   BookType,
+  Calendar,
 } from "lucide-react";
 import React, { useState } from "react";
 
@@ -24,7 +25,7 @@ function Sidebar() {
     { name: "Attendance", link: "/sidebar", icon: BookCheck },
     { name: "Class Routine", link: "/sidebar", icon: BookCheck },
     { name: "Exam", link: "/sidebar", icon: NotebookPen },
-    { name: "Calender", link: "/sidebar", icon: BookCheck },
+    { name: "Events", link: "/events", icon: Calendar },
   ];
 
   const [open, setOpen] = useState(true);
