@@ -19,14 +19,12 @@ function Navbar() {
           </SelectTrigger>
           <SelectContent className="bg-[#0e0e0e] text-white">
             <SelectItem className=" hover:bg-gray-800" value="light">
-              Student
-            </SelectItem>
-            <SelectItem className=" hover:bg-gray-800" value="dark">
-              Teacher
-            </SelectItem>
-            <SelectItem className=" hover:bg-gray-800" value="system">
               Admin
             </SelectItem>
+            <SelectItem className=" hover:bg-gray-800" value="dark">
+              Logout
+            </SelectItem>
+            
           </SelectContent>
         </Select>
       </div>

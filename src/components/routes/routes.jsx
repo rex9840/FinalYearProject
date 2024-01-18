@@ -7,6 +7,8 @@ import Dashboard from "../dashboard/Dashboard";
 import Events from "../events/Events";
 import SignupHomepage from "../auth/SignupHomepage";
 import SignupPage from "../auth/SignupPage";
+import AdminHomepage from "../admin/AdminHomepage";
+import AdminDashboard from "../admin/AdminDashboard";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/dashboard",
         element: <AdminDashboard />,
+      },
+      {
+        path: "/admin/events",
+        element: <Events />,
       },
     ],
   },
