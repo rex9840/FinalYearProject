@@ -1,24 +1,26 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import LoginPage from "../auth/LoginPage";
-import SignupPage from "../auth/SignupPage";
 import App from "../../App";
 // import Sidebar from "../home/Sidebar";
 // import Navbar from "../home/Navbar";
 import Dashboard from "../dashboard/Dashboard";
 import Events from "../events/Events";
+import SignupHomepage from "../auth/SignupHomepage";
+import SignupPage from "../auth/SignupPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <SignupHomepage />,
+  },
+
+  {
+    path: "/admin",
+    element: <AdminHomepage />,
     children: [
       {
-        path: "/dashboard",
-        element: <Dashboard />,
-      },
-      {
-        path: "/events",
-        element: <Events />,
+        path: "/admin/dashboard",
+        element: <AdminDashboard />,
       },
     ],
   },
@@ -28,7 +30,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/signup",
-    element: <SignupPage />,
+    element: <SignupHomepage />,
+  },
+  {
+    path: "/signup/student",
+    element: <SignupPage role="student" />,
+  },
+  {
+    path: "/signup/admin",
+    element: <SignupPage role="admin" />,
+  },
+  {
+    path: "/signup/teacher",
+    element: <SignupPage role="teacher" />,
   },
 ]);
 

@@ -18,14 +18,14 @@ function Sidebar() {
   const menus = [
     { name: "Dashboard", link: "/dashboard", icon: LayoutDashboard },
     { name: "Class", link: "/sidebar", icon: School },
-    { name: "Section", link: "/sidebar", icon: MessageCircle },
-    { name: "Subject", link: "/sidebar", icon: BookType },
-    { name: "Student ", link: "/sidebar", icon: UserIcon },
-    { name: "Teacher", link: "/sidebar", icon: GraduationCap },
+    { name: "Subject", link: "/sidebar", icon: MessageCircle },
+    { name: "Teacher", link: "/sidebar", icon: BookType },
+    { name: "Routine ", link: "/sidebar", icon: UserIcon },
+    { name: "Result", link: "/sidebar", icon: GraduationCap },
+    { name: "Complain", link: "/sidebar", icon: BookCheck },
     { name: "Attendance", link: "/sidebar", icon: BookCheck },
-    { name: "Class Routine", link: "/sidebar", icon: BookCheck },
-    { name: "Exam", link: "/sidebar", icon: NotebookPen },
-    { name: "Events", link: "/events", icon: Calendar },
+    { name: "Assignment", link: "/sidebar", icon: NotebookPen },
+    { name: "Notice", link: "/events", icon: Calendar },
   ];
 
   const [open, setOpen] = useState(true);

@@ -1,0 +1,115 @@
+const signupInputs = {
+  "student": [
+    {
+      name: "fullname",
+      type: "name",
+      label: "Full Name",
+      placeholder: "Enter Your Full Name",
+      required: true,
+    },
+    {
+      name: "rollno",
+      type: "number",
+      label: "Roll No.",
+      placeholder: "Enter Your Roll Number",
+      required: true,
+    },
+    {
+      name: "email",
+      type: "email",
+      label: "Email",
+      placeholder: "Enter Your Email Address",
+      required: true,
+    },
+    {
+      name: "password",
+      type: "password",
+      label: "Password",
+      placeholder: "••••••••",
+      required: true,
+    },
+    {
+      name: "re-password",
+      type: "password",
+      label: "Re-enter Password",
+      placeholder: "••••••••",
+      required: true,
+    },
+  ],
+  "teacher": [
+    {
+      name: "fullname",
+      type: "name",
+      label: "Full Name",
+      placeholder: "Enter Your Full Name",
+      required: true,
+    },
+    {
+      name: "teacherid",
+      type: "number",
+      label: "Teacher ID",
+      placeholder: "Enter Your Teacher ID",
+      required: true,
+    },
+    {
+      name: "email",
+      type: "email",
+      label: "Email",
+      placeholder: "Enter Your Email Address",
+      required: true,
+    },
+    {
+     name:"password",
+      type: "password",
+      label: "Password",
+      placeholder: "••••••••",
+      required: true,
+    },
+    {
+      name: "repassword",
+      type: "password",
+      label: "Re-enter Password",
+      placeholder: "••••••••",
+      required: true,
+    },
+  ],
+  "admin": [
+    {
+      name:"fullname",
+      type: "name",
+      label: "Full Name",
+      placeholder: "Enter Your Full Name",
+      required: true,
+    },
+    {
+      name: "schoolid",
+      type: "number",
+      label: "School ID",
+      placeholder: "Enter Your School ID",
+      required: true,
+    },
+    {
+      name: "email",
+      type: "email",
+      label: "Email",
+      placeholder: "Enter Your Email Address",
+      required: true,
+    },
+    {
+      name: "password",
+      type: "password",
+      label: "Password",
+      placeholder: "••••••••",
+      required: true,
+    },
+    {
+      name: "re-password",
+      type: "password",
+      label: "Re-enter Password",
+      placeholder: "••••••••",
+      required: true,
+    },
+  ],
+};
+
+export { signupInputs };
