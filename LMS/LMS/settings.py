@@ -79,7 +79,11 @@ ROOT_URLCONF = 'LMS.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ['templates'],
+=======
+        'DIRS': [],
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,8 +104,13 @@ AUTH_USER_MODEL = 'api.Users'
 
 #MEDIA URl config
 
+<<<<<<< HEAD
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
 MEDIA_URL = '/media/'
+=======
+MEDIA_ROOT = os.path.join(BASE_DIR, 'image', 'upload', 'profile_Pic')
+MEDIA_URL = '/image/upload/profile_Pic/'
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 
 
 # Database

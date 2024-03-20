@@ -4,6 +4,7 @@ from django.contrib.auth.hashers import make_password
 from api.users.models import Users
 
 class UserSerializer(serializers.ModelSerializer):
+<<<<<<< HEAD
     password = serializers.CharField(write_only=True)
     class Meta:
         model  = Users
@@ -14,10 +15,19 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
+=======
+    class Meta:
+        model  = Users
+        exclude = ['id','is_staff','is_admin','is_teacher','is_active']
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 
 
 class RegisterSerializer(serializers.ModelSerializer):
 
+<<<<<<< HEAD
+=======
+    is_teacher = serializers.BooleanField(default=False)
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
     password = serializers.CharField(write_only=True)
     confirm_password = serializers.CharField(write_only=True)
     class Meta:

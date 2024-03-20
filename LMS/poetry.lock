@@ -240,6 +240,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "contourpy"
 version = "1.2.0"
 description = "Python library for calculating contours of 2D quadrilateral grids"
@@ -303,6 +304,8 @@ test = ["Pillow", "contourpy[test-no-images]", "matplotlib"]
 test-no-images = ["pytest", "pytest-cov", "pytest-xdist", "wurlitzer"]
 
 [[package]]
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 name = "cryptography"
 version = "41.0.7"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
@@ -348,6 +351,7 @@ test = ["pretend", "pytest (>=6.2.0)", "pytest-benchmark", "pytest-cov", "pytest
 test-randomorder = ["pytest-randomly"]
 
 [[package]]
+<<<<<<< HEAD
 name = "cycler"
 version = "0.12.1"
 description = "Composable style cycles"
@@ -363,6 +367,8 @@ docs = ["ipython", "matplotlib", "numpydoc", "sphinx"]
 tests = ["pytest", "pytest-cov", "pytest-xdist"]
 
 [[package]]
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 name = "defusedxml"
 version = "0.7.1"
 description = "XML bomb protection for Python stdlib modules"
@@ -503,6 +509,7 @@ python-jose = ["python-jose (==3.3.0)"]
 test = ["cryptography", "freezegun", "pytest", "pytest-cov", "pytest-django", "pytest-xdist", "tox"]
 
 [[package]]
+<<<<<<< HEAD
 name = "fonttools"
 version = "4.49.0"
 description = "Tools to manipulate font files"
@@ -568,6 +575,8 @@ unicode = ["unicodedata2 (>=15.1.0)"]
 woff = ["brotli (>=1.0.1)", "brotlicffi (>=0.8.0)", "zopfli (>=0.1.4)"]
 
 [[package]]
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 name = "idna"
 version = "3.6"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -579,6 +588,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "kiwisolver"
 version = "1.4.5"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -785,6 +795,8 @@ files = [
 ]
 
 [[package]]
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 name = "oauthlib"
 version = "3.2.2"
 description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
@@ -801,6 +813,7 @@ signals = ["blinker (>=1.4.0)"]
 signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
 
 [[package]]
+<<<<<<< HEAD
 name = "packaging"
 version = "23.2"
 description = "Core utilities for Python packages"
@@ -881,6 +894,8 @@ test = ["hypothesis (>=6.46.1)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)"]
 xml = ["lxml (>=4.9.2)"]
 
 [[package]]
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 name = "pillow"
 version = "10.2.0"
 description = "Python Imaging Library (Fork)"
@@ -1170,6 +1185,7 @@ docs = ["sphinx (>=4.5.0,<5.0.0)", "sphinx-rtd-theme", "zope.interface"]
 tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
+<<<<<<< HEAD
 name = "pyparsing"
 version = "3.1.1"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
@@ -1198,6 +1214,8 @@ files = [
 six = ">=1.5"
 
 [[package]]
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 name = "python-dotenv"
 version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -1347,4 +1365,8 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
+<<<<<<< HEAD
 content-hash = "01bed9b6a85d7e5a26f11ba1de6c81f28e27edb71dc93169e80d61b85467f1fe"
+=======
+content-hash = "0dbf5c4bcba5916865cffca5466ed180bebfb938179aabfc52857f154c14e97b"
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f

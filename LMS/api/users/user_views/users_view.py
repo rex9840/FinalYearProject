@@ -1,6 +1,10 @@
 
+<<<<<<< HEAD
 from contextlib import redirect_stdout
 from http.client import METHOD_NOT_ALLOWED, responses
+=======
+from http.client import METHOD_NOT_ALLOWED
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.views import csrf_exempt
@@ -23,6 +27,7 @@ class UsersCreate(viewsets.ModelViewSet):
             serializer.save()
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
+<<<<<<< HEAD
 
 
 class UserView(viewsets.ModelViewSet):
@@ -70,3 +75,18 @@ class UserView(viewsets.ModelViewSet):
 
 
 
+=======
+    
+
+
+class UserView(viewsets.ModelViewSet):
+    queryset = Users.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]
+
+    http_method_names = ['get','delete','patch']
+    def list(self, request):
+        data = Users.objects.all() 
+        serializer = UserSerializer(data, many=True)
+        return JsonResponse(serializer.data, safe=False,status=200)
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f

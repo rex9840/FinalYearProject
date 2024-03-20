@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from .recomendations.recomendation import get_recommendations, recomendation_cluster_tabel
 
 def test(request): 
@@ -10,3 +11,5 @@ def test(request):
             'recomendations': recommendations.to_html()
             }
     return render(request, 'test.html', data)
+=======
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f

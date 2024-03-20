@@ -38,4 +38,11 @@ urlpatterns += [
     path('', RedirectView.as_view(url='api/', permanent=True)),
 ]
 
+<<<<<<< HEAD
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+>>>>>>> 5b46ec04fc8b908edf66c795ca460798cf5ffe8f
