@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Tags, Resources
-
+from .models import Tags, Resources ,Catagories
 # Register your models here.
 
 
@@ -13,9 +12,21 @@ class TagsAdmin(admin.ModelAdmin):
 
 @admin.register(Resources)
 class ResourceAdmin(admin.ModelAdmin): 
-    list_display = ['resource_id','name','description','tags_list','resource_image','resource_file','created_at','uploaded_by'] 
+    list_display = ['resource_id','name','description','catagory','tags_list','resource_image','resource_file','created_at','uploaded_by'] 
     list_filter = ['name','tags','created_at','uploaded_by']
     
     def tags_list(self, obj):
         return "\n".join([tag.tag_name for tag in obj.tags.all()])
     tags_list.short_description = 'Tags'
+    
+    def catagory(self, obj):
+        return obj.catagory.catagory_name 
+    catagory.short_description = 'Catagory' 
+
+@admin.register(Catagories)
+class CatagoriesAdmin(admin.ModelAdmin):
+    list_display = ['catagory_id','catagory_name']
+    list_filter = ['catagory_id','catagory_name']
+
+
+

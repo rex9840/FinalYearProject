@@ -105,4 +105,4 @@ class Users(AbstractBaseUser):
         self.set_password(self.password)
         if self.is_admin:
             self.is_staff = True 
-        super().save(*args,**kwargs)   
+        super(Users,self).save(*args,**kwargs)
