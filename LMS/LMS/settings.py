@@ -48,7 +48,13 @@ INSTALLED_APPS = [
 
 
 #CORS ALLOWED ORIGIN for api calls
-CHORS_ORIGIN_ALLOW_ALL = True
+
+
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+]
+
 
 #JWT AUTHENTICATION for rest framework
 REST_FRAMEWORK = {
@@ -72,6 +78,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    # cors middleware 
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'LMS.urls'
@@ -115,13 +124,8 @@ env.read_env()
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DATABASE_NAME'),
-        'USER' : env('DATABASE_USER'), 
-        'PASSWORD' : env('DATABASE_PASSWORD'), 
-        'HOST' : env('DATABASE_HOST'), 
-        'PORT' : env('DATABASE_PORT'), 
-
+        'ENGINE': 'django.db.backends.sqlite3', 
+        'NAME': BASE_DIR / 'db.sqlite3', 
     }
 }
 
