@@ -1256,6 +1256,17 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+name = "python-version"
+version = "0.0.2"
+description = "Provides a simple utility for checking the python version."
+optional = false
+python-versions = "*"
+files = [
+    {file = "python_version-0.0.2-py2.py3-none-any.whl", hash = "sha256:2c7429f3375cee19873892e5db4d10d2b42172d8851a8bb5111729e028470580"},
+    {file = "python_version-0.0.2.tar.gz", hash = "sha256:5c16de57c7f2d614621cf468e8f5a20bb6b3cec665c9c7f5e9f9f000bf04fe67"},
+]
+
+[[package]]
 name = "python3-openid"
 version = "3.2.0"
 description = "OpenID support for modern servers and consumers."
@@ -1392,4 +1403,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "29edf9487dd82ff97b9bb50a008ef9379d207eab5f124fcb485e264ec49a5eeb"
+content-hash = "a3fe3d8d671a2af6700e41f0bd55970ae5660c6435b55a1cf710e4aaf28327d2"
